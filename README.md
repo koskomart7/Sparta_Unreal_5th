@@ -1,11 +1,44 @@
 # Sparta_Unreal_5th
 Fortress of Solitude
+<details>
+  
+<summary> ### 25.07.28 </summary>
 
-### 25.07.28
-- To Do List
-  - [ ] github 정리 및 블로그용 레포지토리 생성
-  - [ ] 사전강의 C++ 언어로 게임 만들기 / 라이더 생태계 적응 
-- Today I Learned
+  - To Do List
+    - [ ] github 정리 및 블로그용 레포지토리 생성
+    - [ ] 사전강의 C++ 언어로 게임 만들기 / 라이더 생태계 적응 
+  - Today I Learned
+    - 전반적인 기초 재점검
+    - <details>
+      <summary> endl 과 \n 사용 경고 문구 </summary>
+      C++ 코드에서 다음과 같이 작성하신 경우
+      cout << Name << "죽다" << endl;
+
+      Clang-Tidy 등의 정적 분석 도구에서
+      'Do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]' 라는 경고가 나타나는 이유는
+      
+      _**std::endl이 줄바꿈과 함께 출력 버퍼를 강제로 flush(비우기)하기 때문입니다. 빈번한 flush는 성능 저하를 유발할 수 있습니다.**_
+      
+
+      해결 방법
+      std::endl 대신 '\n' 문자 리터럴을 사용하며, 코드를 다음과 같이 변경해 주세요:
+
+      ```cpp
+      cout << Name << "죽다\n";
+      ```
+      '\n'은 줄바꿈만 수행하고, 강제 flush는 발생시키지 않습니다. 따라서 성능상 더 효율적입니다.
+
+      요약
+      << endl → << '\n'으로 변경하면 경고가 사라지고 성능이 향상됩니다.
+
+      만약 정말로 출력 버퍼를 즉시 비워야 할 필요가 있다면 endl을 사용하세요. 대부분의 경우는 '\n'이 적합합니다.
+      </details>
+    
+     
+
+   
+
+
 ```C++
 //Actor.h
 #pragma once  // 한번만 해석한다 

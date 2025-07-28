@@ -1,8 +1,8 @@
 # Sparta_Unreal_5th
 Fortress of Solitude
+ 
 <details>
-  
-<summary> ### 25.07.28 </summary>
+<summary> 25.07.28 </summary>
 
   - To Do List
     - [ ] github 정리 및 블로그용 레포지토리 생성
@@ -29,6 +29,7 @@ Fortress of Solitude
       '\n'은 줄바꿈만 수행하고, 강제 flush는 발생시키지 않습니다. 따라서 성능상 더 효율적입니다.
 
       요약
+      
       << endl → << '\n'으로 변경하면 경고가 사라지고 성능이 향상됩니다.
 
       만약 정말로 출력 버퍼를 즉시 비워야 할 필요가 있다면 endl을 사용하세요. 대부분의 경우는 '\n'이 적합합니다.

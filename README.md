@@ -6,7 +6,6 @@ Fortress of Solitude
   - [ ] github 정리 및 블로그용 레포지토리 생성
   - [ ] 사전강의 C++ 언어로 게임 만들기 / 라이더 생태계 적응 
 - Today I Learned
-  - 
 ```C++
 //Actor.h
 #pragma once  // 한번만 해석한다 
@@ -40,3 +39,59 @@ protected:    // 상속받은 자식과 부모 자신만 쓸수있다
     int AD;
     int Position;
 };
+
+//Actor.cpp
+#include "Actor.h"
+#include <iostream>
+using namespace std;
+
+Actor::Actor(int hp, int ad, string name)   //Actor 클래스의 Actor를 구현한다 
+{
+    HP = hp;
+    AD = ad;
+    Name = name;
+    Position = 0;
+}
+
+void Actor::SetPosition(int position)
+{
+    Position = position;
+}
+
+int Actor::GetPosition()
+{
+    return Position;    
+}
+
+int Actor::GetHP()
+{
+    return HP;
+}
+
+void Actor::Damage(int damage)
+{
+    HP -= damage;
+}
+
+void Actor::Attack(Actor* hit)
+{
+    hit->Damage(AD);        // 포인터 사용시 (*hit).Damage(AD); -> hit가 가리키고 있는 대상에게 대미지 적용
+                            // 위 포인터 기능을 '->' 화살표로 간소화 
+}
+
+void Actor::Move(bool front)
+{
+    if (front)
+    {
+        Position += 1;
+    }
+    else
+    {
+        Position -= 1;
+    }
+}
+
+Actor::~Actor()
+{
+    cout<<Name<<"죽다\n";
+}

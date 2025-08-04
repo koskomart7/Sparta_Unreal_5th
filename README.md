@@ -142,7 +142,18 @@ Fortress of Solitude
     - [ ] 본캠프준비
     - [ ] 1-3 캐릭터와 에너미 알아보기 
   - Today I Learned
-    - c++ 캐릭터와 에너미 구조 설계 학습
+    - c++ 캐릭터와 에너미 구조 설계 학습 1
+
+</details>
+
+<details>
+<summary> 25.08.04 </summary>
+
+  - To Do List
+    - [ ] 본캠프준비
+    - [ ] 1-3 캐릭터와 에너미 알아보기 
+  - Today I Learned
+    - c++ 캐릭터와 에너미 구조 설계 학습 2
 
 </details>
 

@@ -290,7 +290,11 @@ Fortress of Solitude
     #### 요약:
     copy는 원본 값을 건드리지 않고, ref는 실제 원본 값을 변경할 수 있습니다.
     값 변경까지 원해야 할 때는 ref를, 값 확인/복사만 할 때는 copy를 사용합니다.
-     
+
+    #### 구조체를 이용한 텍스트 슈팅 게임 구현
+    https://github.com/user-attachments/assets/c12d7e1a-92f8-4218-a8b0-2e3e8723da01
+
+
     </details>
 
    

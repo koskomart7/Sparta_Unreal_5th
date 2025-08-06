@@ -262,6 +262,7 @@ Fortress of Solitude
     - [ ] 1-3 캐릭터와 에너미 마무리
   - Today I Learned
     - c++ 캐릭터와 에너미 구조 설계 복습
+    - 라이더 언어 관련 깨짐 현상 디버그 방법 
     - 블루프린트 기초 로직 공부- 텍스트 슈팅게임 무기 추가 ( ref / copy )
     <details>
     <summary> 블루프린트 기초 로직 공부- 텍스트 슈팅게임 무기 추가 ( ref / copy ) </summary>
@@ -296,6 +297,13 @@ Fortress of Solitude
 
 
     </details>
+
+    <details>
+    <summary> 라이더 언어 관련 깨짐 현상 디버그 방법 </summary>
+    라이더 로직 작성시 한글이 깨지는 현상 디버그
+    시스템의 언어및 지역 -> 관련설정_기본언어설정 -> 시스템로캘변경 -> 세계언어지원을 위해 Unicode UTF-8 사용 체크
+    </details>
+
 
    
 

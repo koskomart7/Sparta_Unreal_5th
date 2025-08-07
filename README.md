@@ -303,13 +303,21 @@ Fortress of Solitude
     라이더 로직 작성시 한글이 깨지는 현상 디버그
     시스템의 언어및 지역 -> 관련설정_기본언어설정 -> 시스템로캘변경 -> 세계언어지원을 위해 Unicode UTF-8 사용 체크
     </details>
+</details>
 
+<details>
+<summary> 25.08.07 </summary>
 
-   
-
-
+  - To Do List
+    - [x] 레벨디자인 제작    
+  - Today I Learned
+    - 블록아웃 구성 및 플러그인 활용
+    
+   <img width="990" height="650" alt="화면 캡처 2025-08-07 113313" src="https://github.com/user-attachments/assets/c313c91d-89b2-49c6-aa03-03b0aaff77b1" />
 
 </details>
+
+
 
 
       

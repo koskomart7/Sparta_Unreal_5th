@@ -327,6 +327,20 @@ Fortress of Solitude
     https://youtu.be/hWfCO5S9x1g?si=QmR7TpcE8yuBVrOr
 </details>
 
+<details>
+<summary> 25.08.11 </summary>
+
+  - To Do List
+    - [x] 깃 학습
+    - [x] 블루프린트 핵심 학습 _ Spline
+    - [x] 챕터2 발제 정리 
+  - Today I Learned
+    - 버전 관리 툴 학습
+    - Spline 응용 기술 학습
+    - c++ 챕터2 발제 정리 
+
+</details>
+
 
 
 

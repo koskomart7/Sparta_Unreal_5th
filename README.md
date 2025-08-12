@@ -341,6 +341,53 @@ Fortress of Solitude
 
 </details>
 
+<details>
+<summary> 25.08.12 </summary>
+
+  - To Do List
+    - [x] 1-4 언리얼 기본 예제로 공부 
+    - [x] 블루프린트 핵심 학습 _ UMG
+    - [x] C 언어 스터디 참가
+  - Today I Learned
+    - 언리얼 코드 구성 학습
+    - UMG 구성 학습
+    - c언어 기초 학습 - 로우 레벨
+      <details>
+      <summary> 1-4 언리얼 기본 예제로 공부 </summary> 
+      
+        ```c++
+        #include "CoreMinimal.h"    // 기본적인 엔진의 기초 기능을 담고있다
+        #include "Game1Character.generated.h"   // GENERATED_BODY() 를 사용하기 위함
+              // generated.h 는 가장 마지막에 위치해야 작동한다 
+         -> GENERATED_BODY() // 클래스의 정보를 언리얼로 인식 시켜주는 역할  
+  
+        class USpringArmComponent;
+        class UCameraComponent;
+        class UInputMappingContext;
+        class UInputAction;
+        // 복잡한 헤더파일의 참조 구조를 피하기 위해 선언만 해놓은 것 ( 전방선언 )
+        struct FInputActionValue; // 구조체 -> 기본적으로 public으로 선언이 된다 
+        
+        UCLASS(config=Game) // 클래스의 정보를 언리얼에 알려주기 위한 것 ( 리플렉션 )
+                // UPROPERTY 도 마찬가지 기능
+        
+        USpringArmComponent* CameraBoom;    // 객체를 포인터로 받는 이유 : 객체 자체를 가져오면 복사본이 되어 수정이 되지만
+                                            //  포인터로 받아서 객체를 수정하기 위함
+        
+        void Move(const FInputActionValue& Value);  // const : 변하지 않는 상수값
+            // FInputActionValue& Value -> & 뒤의 Value를 주소 안에 있는 값으로 받겠다
+        
+        virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+            // class UInputComponent* : 전방선언 클래스
+        
+        FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+            // FORCEINLINE : 짧은 함수는 복사해서 그 위치에 붙여넣겠다는 뜻
+            //  const : 해당 함수 내에서 변화를 일으키지 않겠다는 뜻
+        ```
+     </details>
+</details>
+
+
 
 
 

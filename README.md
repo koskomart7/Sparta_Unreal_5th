@@ -881,11 +881,18 @@ Fortress of Solitude
     * 코드 최상단에 작성해야 효과가 있습니다  
     * 보안 및 안정성을 위해 가급적 새로운 안전한 함수를 사용하는 습관을 갖는 것이 좋습니다
     </details>
-
-
 </details>
 
-
+<details>
+<summary> 25.08.19 </summary>
+ 
+- To Do List
+    - [x] 알고리즘 복습 및 정리 ( 포인터, 참조자 )
+    - [x] 스파르타C 공부 ( 포인터 )
+    - [x] c++ 문법 강의 진행 1주차
+- Today I Learned
+  - 포인터에 대한 전반적인 학습 
+</details>
 
       
 
